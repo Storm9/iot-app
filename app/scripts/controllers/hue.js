@@ -18,13 +18,8 @@ angular.module('iotAppApp')
       myHue.setLightState(4, {"on": false});
     }
 
-    function turnOnLights() {
-      myHue.setLightState(4, {"on": true});
-    }
-
     function init() {
       vm.turnOffLights = turnOffLights;
-      vm.turnOnLights = turnOnLights;
       vm.setDefaultScene = setDefaultScene;
       vm.setMovieMode = setMovieMode;
       vm.setVirginAtlanticPurple = setVirginAtlanticPurple;
