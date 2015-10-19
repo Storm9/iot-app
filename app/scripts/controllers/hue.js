@@ -8,7 +8,7 @@ angular.module('iotAppApp')
 
     // Get all lights
     var myHue = hue;
-    myHue.setup({username: 'newdeveloper', bridgeIP: '10.0.1.3', debug: true});
+    myHue.setup({username: 'newdeveloper', bridgeIP: '10.0.1.2', debug: true});
 
     function turnOffLights() {
       myHue.setGroupState(1, {on: false});
